@@ -148,7 +148,7 @@ console.log(fullStack)
 // Egzersiz Seviye 3 
 
 
-const  ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+const  ages = [-19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 //1-Diziyi sıralayın ve en küçük ve en büyük yaşı bulun.
 ages.sort()
@@ -168,9 +168,13 @@ let b = ages[9]
 let yasAraliği = (`${a}-${b}`)
 console.log(yasAraliği)
 //5-abs() metodunu kullanarak (min - ortalama) ve (maks - ortalama) değerlerini karşılaştırın,
-// ??
-
+for(let i = 0; i<ages.length; i++) {
+ let agess = Math.abs(ages[0])
+ console.log(agess)
+} 
 //1-countries array dizisinden ilk 10 ülkeyi dilimleyin ( Slice edin )
 console.log(countries.slice(0,10))
 //2-countries array dizisinden ortadaki ülkeleri bulun.
-// Ortadakileri bulmak için farklı bir şey var mı?? 
+console.log(countries.length)
+console.log(countries[6])
+ 
