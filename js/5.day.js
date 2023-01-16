@@ -94,7 +94,7 @@ for ( let i12=0; i12<=100; i12+=2) {
 3-Rastgele bir rgb renk numarası oluşturan fonksiyon yazın.
 rgb(240,180,80) */ 
 
-let ülkeler = ["ALBANİA", "BOLİVİA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
+let ülkeler = ["ALBANIA", "BOLİVIA", "CANADA", "DENMARK", "ETHIOPIA", "FINLAND", "GERMANY", "HUNGARY", "IRELAND", "JAPAN", "KENYA"]
 
 //4- Yukarıdaki array'i kullanarak rastgele yeni bir dizi oluşturun.
 //??
@@ -127,12 +127,28 @@ console.log(newArr2)
 ] */ // Bir şey tam olmadı sor onu
 
 // 7- Yukarıdaki ülkeler dizisinde "land" sözcüğünü içeren bir ülke veya ülke olup olmadığını kontrol edin. "land" içeren ülkeler varsa bunu dizi halinde yazdırın.
-const newArr3 = []
-for(let i15=0; i15<=ülkeler.length-1; i15++) {
-    newArr3.push(ülkeler[i15].indexOf('land'))
+  const newArr6 = ülkeler.filter(country => {
+   if(country.includes('LAND')){
+    return country
+   }
+})
+console.log(newArr6) 
+
+const newArrr = []
+for(let i = 0; i<ülkeler.length -1; i++ ) {
+    if(ülkeler[i].includes('LAND')) {
+        newArrr.push(ülkeler[i])
+    }
 }
-console.log(newArr3) //??
+console.log(newArrr)
 //8-Yukarıdaki ülkeler dizisinde "ia" sözcüğünü içeren bir ülke veya ülke olup olmadığını kontrol edin. "ia" içeren ülkeler varsa bunu dizi halinde yazdırın..
+const newAr = []
+for(let i =0; i<ülkeler.length -1; i++) {
+    if(ülkeler[i].includes('IA')) {
+        newAr.push(ülkeler[i])
+    }
+}
+console.log(newAr)
 //9-Yukarıdaki ülkeler dizisini kullanarak en fazla karakter içeren ülkeyi bulun.
 //(5 tek gibi uzunluklarını bulur sonrasında çekerim.) -Farklı bir şeyi varsa sor
 //10-Yukarıdaki ülkeler dizisini kullanarak, yalnızca 5 karakter içeren ülkeyi bulun.
@@ -153,14 +169,28 @@ const countries = [
     'Kenya'
   ]
 
-//1-Countries dizisini kopyalayın(Avoid mutation)
-//2-Diziler değişebilir. Dizinin orjinalini değişirmeden bir kopyasını oluşturun. Oluşturduğunuz diziyi alfabetik olarak sıralayın ve sortedCountries dizisine atayın
-//3-webTechs dzisini ve mernStack dizisini sıralayın
-//4-countries arrayinden "land" sözüğü ile biten ülkeleri farklı bir diziye atayın
-//5-countries array inden en uzun karakterli ülkeyi bulun
-//6-countries array inde 4 karakterli ülkeleri yazdırın
-//7-countries array inde iki veya daha fazla kelime içieren ülkeleri farklı bir diziye atayın
-//8-countries array i ters çevirin ve ülkelerin tüm harflerini büyük hale gertirin
+//1-countries array inden en uzun karakterli ülkeyi bulun
+let newString = ''
+for(let i = 0; i<ülkeler.length -1; i++) {
+    if(ülkeler[i].length>newString.length) {
+        newString = ülkeler[i]
+    }
+}
+console.log(newString)
+//2-countries array inde 4 karakterli ülkeleri yazdırın
+const newAr2 = []
+for(let i=0; i<ülkeler.length; i++) {
+    if(ülkeler[i].length===5) {
+        newAr2.push(ülkeler[i])
+    }
+}
+console.log(newAr2)
+
+const newAr3 = ülkeler.filter(country => {
+    return country.length===5
+})
+console.log(newAr3)
+//3-countries array i ters çevirin ve ülkelerin tüm harflerini büyük hale gertirin
 const newArr5 = []
 for(let i16=0; i16<=ülkeler.length-1; i16++) {
     newArr5.push(countries[i16].toUpperCase())
