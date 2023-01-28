@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <div>
+            <h1 style="text-align: center;">Number Generator</h1>
+            <h2 style="text-align: center; font-size: 14px;"><u>30 Days Of JavaScript: Dom Day 2</u></h2>
+            <h3 style="text-align: center; font-size: 12px;"><u>Author:Sait Sumeli</u></h3>
+            </div>
+            <div class="maindiv" style="display: grid; grid-template-rows: repeat(20, 1fr); grid-template-columns: repeat(6, 1fr); grid-column-gap: 1px; width: 500px; text-align: center;"></div>
+    </div>
+    
+    
+        <script>
+            // birden çok öğe oluşturma ve üst öğeye ekleme
+            for (let i = 0; i < 101; i++) {
+                const maindiv = document.querySelector('.maindiv')
+                title = document.createElement('h1')
+                title.className = 'title'
+                title.style.fontSize = '50px'
+                title.textContent = i
+                maindiv.appendChild(title)
+                title.style.display = 'inline-block '
+                title.style.justifyContent = 'center'
+                if(i % 2 == 0) {
+                    title.style.backgroundColor = 'green'
+                } else {
+                    title.style.backgroundColor = 'red'
+                }
+                title.style.border ="solid"
+                title.style.borderColor = "white"
+                title.style.margin = "0 auto"
+                title.style.width= "75px"
+                title.style.height = "50px"
+                
+            }
+        </script>
+    
+    
+    <script src="js/21.day.mini.proje.js"></script>
+</body>
+
+</html>
