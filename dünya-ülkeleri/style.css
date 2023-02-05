@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.5 ease-in;
+}
+
+header {
+justify-content: center;
+text-align: center;
+background-color: #f0fff0;
+margin-top: 0.1rem;
+align-items: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #ffa500;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: sans-serif;
+    color:#778899 ;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+div {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button {
+background-color:  #F5B041;
+height:30px;
+border-color:#f0fff0;
+border-radius :5px 5px 5px 5px;
+font-size: 17px;
+height: 3rem;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+main {
+    background-color: #F4F6F6;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.table{
+    background-color: #F4F6F6;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.Row{
+    display: flex;
+    justify-content: space-around;
+    margin: 0.3rem 0;
+    
+}
+.name{
+    max-width: 2rem;
+    max-height: 2rem;
+    display: flex;
+    align-items: center;
+    color:#616A6B ;
+}
+.progress{
+    width: 40rem;
+    height: 1rem;
+    background-color: #F5B041;
+    color: #F4F6F6;
+}
+progress::-webkit-progress-value { background: #FFA500; }
+progress::-webkit-progress-bar {background-color: #F0F0F0;}
