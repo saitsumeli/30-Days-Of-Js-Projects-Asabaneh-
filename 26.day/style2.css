@@ -1,0 +1,144 @@
+:root{
+    --button-color: #5821af;
+    --button-hover-color: #360f74;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.2s ease; /* geçişler */
+}
+html {
+    font-size: 90%; /* 1rem = 10px */
+}
+body{
+    background-color: #FEF9E7;
+}
+/* Main Div */
+.mainOfHeader {
+    text-align: center;
+    background-image: url(https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/26_Day_World_countries_data_visualization_2/26_day_starter/images/globe-2.jpg?raw=true);
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.sizeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    color: #fff;
+    /*bg*/
+    position: relative;
+}
+.headerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.title{
+    font-size: 5rem;
+    word-spacing: 1.5rem;
+    letter-spacing: 1rem;
+}
+.countryNumberInfo{
+    font-size: 2rem;
+}
+/* Butonlar */ 
+.buttons{
+    padding-bottom: 10px;
+    margin-top: 5rem;
+}
+.startingWord {
+    background-color: #360f74;
+    color: #fff;
+    align-items: center;
+    height: 40px;
+    font-size: 0.8rem;
+    border: 0;
+}
+.searchWithAny {
+    background-color: #7e4ad3;
+    color: #fff;
+    align-items: center;
+    height: 40px;
+    font-size: 0.8rem;
+    border: 0;
+}
+.sort {
+    background-color: #7e4ad3;
+    color: #fff;
+    align-items: center;
+    height: 40px;
+    font-size: 0.8rem;
+    border: 0;
+    width: 40px;
+}
+
+/* İnput Div */ 
+
+.inputDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    width: 50rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 0;
+    place-content: center;
+    font-size: 1.8rem;
+    color: rgb(165, 161, 161);
+    
+}
+::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .searchBtn{
+    background-color: transparent;
+    border: 0;
+  }
+  .searchBtn .searchİcon{
+    font-size: 2.5rem;
+    margin-left: 5px;
+    color: rgb(31, 30, 30);
+    font-weight: 2rem;
+  }
+
+  /* Ulkelerın lıstelendıgı kısım*/
+ 
+  .countryDisp{
+    width: 15rem;
+    height: 15rem;
+
+    background-image: url(img/map_image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .countryText{
+    font-size: 2rem;
+   color: #154360;
+   font-weight: 600;
+  }
+  
+
+  /* Starting With BTN*/
+  .clickBtn{
+    background-color: #360f74;
+  }
