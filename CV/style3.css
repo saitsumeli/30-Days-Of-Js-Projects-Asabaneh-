@@ -1,0 +1,75 @@
+/* Main Div Düzenlemesi */ 
+
+.nameDiv {
+    font-family: sans-serif;
+    font-size: 30px;
+    letter-spacing: 15px;
+    margin-left: 4cm;
+    margin-right: 4cm;
+}
+
+.tanitmaDiv {
+    font-family: sans-serif;
+    font-size: 12px;
+   line-height: 31px ;
+}
+
+.gridDiv {
+    display: flex;
+}
+.countryRow {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+
+.js {
+    background-color: rgb(240, 243, 243);
+    padding: 50px;
+    text-align: center;
+}
+
+.js:hover{
+    background-color:rgb(214, 181, 195);
+    }
+
+.python {
+    background-color: rgb(240, 243, 243);
+    padding: 50px;
+    text-align: center;
+}
+.python:hover{
+    background-color:rgb(214, 181, 195);
+    }
+.javascript {
+    background-color: rgb(240, 243, 243);
+    padding: 50px;
+    text-align: center;
+}
+
+.javascript:hover{
+    background-color:rgb(214, 181, 195);
+    }
+
+p{
+    font-size: 15px;
+    margin-left: 4cm;
+    margin-right: 4cm;
+    
+}
+
+p2 {
+    font-size: 18px;
+    margin-left: 4cm;
+    margin-right: 4cm;
+}
+
+marquee {
+    background-color: rgb(219, 195, 210);
+    margin-left: 4cm;
+    margin-right: 4cm;
+    padding: 20px;
+    
+}
