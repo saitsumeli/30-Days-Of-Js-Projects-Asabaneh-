@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 6rem;
+    transition: 1500ms linear;
+  }
+  span {
+    transition: 1500ms linear;
+  }
+
+  .loading-text{
+    display: none;
+  }
+
+.first {
+    font-size: 130px;
+    font-family:Courier;
+}
+ 
+.second {
+   font-size: 100px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.third {
+   font-size: 90px;
+   font-family: 'Courier New', Courier, monospace;
+}
