@@ -1,6 +1,7 @@
 // Yazi gelmesi için
 var yazi = document.querySelector(".yazi");
-var inputs = document.querySelectorAll("#input");
+var inputs1 = document.querySelectorAll("#input1");
+var inputs2 = document.querySelectorAll("#input2");
 var h2 = document.createElement("h2");
 h2.className = "h2";
 yazi.appendChild(h2);
@@ -24,13 +25,13 @@ list.addEventListener("click", function (item) {
 // Add tıklayınca listenin sonuna eklenmesi
 
 document.querySelector("#btnCreate").onclick = function () {
-  var item = document.querySelector("#input").value;
-  inputs.forEach((input) => {
-    if (input.value === "") {
+  var item = document.querySelector("#input1").value;
+  inputs1.forEach((input1) => {
+    if (input1.value === "") {
       h2.textContent = "Lütfen tüm istenilenleri doldurunuz..";
     }
+    
   });
-
   var li = document.createElement("li");
   var t = document.createTextNode(item);
 
